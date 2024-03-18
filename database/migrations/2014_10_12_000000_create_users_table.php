@@ -18,6 +18,13 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->string('bedrijfsnaam')->nullable(); // Toegevoegd
+            $table->string('straat_huisnummer')->nullable(); // Toegevoegd
+            $table->string('postcode')->nullable(); // Toegevoegd
+            $table->string('plaats')->nullable(); // Toegevoegd
+            $table->string('land')->nullable(); // Toegevoegd
+            $table->string('kvknummer')->nullable(); // Toegevoegd
+            $table->string('telefoonnummer')->nullable(); // Toegevoegd
             $table->timestamps();
         });
     }
